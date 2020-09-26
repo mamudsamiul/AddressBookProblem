@@ -3,6 +3,7 @@ package com.capgemini.addressbookproblem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class AddressBookProblem {
 
@@ -12,5 +13,6 @@ public class AddressBookProblem {
 
 		System.out.println(": Welcome to the Address Book System :");
 		LOG.info("Address book system started");
+		ArrayList<String> contactDetails = new ArrayList<String>();
 	}
 }
