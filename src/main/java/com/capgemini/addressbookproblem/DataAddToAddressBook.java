@@ -3,7 +3,7 @@ package com.capgemini.addressbookproblem;
 import java.util.ArrayList;
 
 public class DataAddToAddressBook {
-	private String firstName;
+	private String firstName; // a->b
 	private String lastName;
 	private String address;
 	private String city;
@@ -11,6 +11,7 @@ public class DataAddToAddressBook {
 	private String zip;
 	private String phoneNo;
 	private String emailAddress;
+	ArrayList<String> addressBook = new ArrayList<String>();
 
 	public DataAddToAddressBook(String firstName, String lastName, String address, String city, String state,
 			String zip, String phoneNo, String emailAddress) {
@@ -24,8 +25,7 @@ public class DataAddToAddressBook {
 		this.emailAddress = emailAddress;
 	}
 
-	public ArrayList<String> data() {
-		ArrayList<String> addressBook = new ArrayList<String>();
+	public void data() {
 		addressBook.add(firstName);
 		addressBook.add(lastName);
 		addressBook.add(address);
@@ -34,6 +34,5 @@ public class DataAddToAddressBook {
 		addressBook.add(zip);
 		addressBook.add(phoneNo);
 		addressBook.add(emailAddress);
-		return addressBook;
 	}
 }
