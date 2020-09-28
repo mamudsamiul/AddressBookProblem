@@ -11,6 +11,7 @@ public class UserInputTaking {
 	static String zip;
 	static String phoneNo;
 	static String emailAddress;
+	static DataAddToAddressBook dataEntry = new DataAddToAddressBook();
 
 	public static DataAddToAddressBook read() {
 		Scanner scan = new Scanner(System.in);
@@ -30,10 +31,9 @@ public class UserInputTaking {
 		phoneNo = scan.nextLine();
 		System.out.println("Please enter your email Address :");
 		emailAddress = scan.nextLine();
-		DataAddToAddressBook firstEntry = new DataAddToAddressBook(firstName, lastName, address, city, state, zip,
-				phoneNo, emailAddress);
-		firstEntry.data();
-		return firstEntry;
+		dataEntry.addUser(firstName, lastName, address, city, state, zip, phoneNo, emailAddress);
+		dataEntry.data();
+		dataEntry.showAddressBook();
+		return dataEntry;
 	}
-
 }
