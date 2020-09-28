@@ -51,6 +51,7 @@ public class AddressBookProblem {
 				firstEntry.showAddressBook();
 				break;
 			default:
+				System.out.println("Invalid Input");
 			}
 		}
 	}
